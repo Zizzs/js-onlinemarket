@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Talex Vape Shop</title>
+</head>
+<body>
+  <div class='container'>
+    <h1>Welcome to Talex Vape Shop!</h1>
+    <button id="myBtn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Make Purchase!</button>
+
+    <form id='purchase'>
+      <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Add to order</button>
+
+      <div class='form-group'>
+        <label for="nameInput">Enter your full name:</label>
+        <input id="nameInput" class="form-control" type="text">
+      </div>
+
+      <div class='form-group'>
+        <label for="addressInput">Enter your home address:</label>
+        <input id="addressInput" class="form-control" type="text">
+      </div>
+
+      <div class='form-group'>
+        <label for="purchase1Input">Flavor #1</label>
+        <select class="form-control" id="purchase1Input">
+          <option value="sm">Strawberry Milk</option>
+          <option value="bc">Banana Cream</option>
+          <option value="kj">Kombucha Juice</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+
+      <div class='form-group'>
+        <label for="purchase2Input">Flavor #2</label>
+        <select class="form-control" id="purchase1Input">
+          <option value="sm">Strawberry Milk</option>
+          <option value="bc">Banana Cream</option>
+          <option value="kj">Kombucha Juice</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+
+      <div class='form-group'>
+        <label for="purchase3Input">Flavor #3</label>
+        <select class="form-control" id="purchase1Input">
+          <option value="sm">Strawberry Milk</option>
+          <option value="bc">Banana Cream</option>
+          <option value="kj">Kombucha Juice</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+
+      <div class='form-group'>
+        <label for="purchase4Input">Flavor #4</label>
+        <select class="form-control" id="purchase1Input">
+          <option value="sm">Strawberry Milk</option>
+          <option value="bc">Banana Cream</option>
+          <option value="kj">Kombucha Juice</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+    </form>
+
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Purchase Receipt</h2>
+      </div>
+      <div class="modal-body">
+        <div>
+          <div>Name: </div><span class="modalName"></span><br>
+          <br>
+          <div>Address: </div><span class="modalAddress"></span><br>
+          <br>
+          <div>Item #1: </div><span class="modalPurchase1"></span><br>
+          <br>
+          <div>Item #2: </div><span class="modalPurchase2"></span><br>
+          <br>
+          <div>Item #3: </div><span class="modalPurchase3"></span><br>
+          <br>
+          <div>Item #4: </div><span class="modalPurchase4"></span><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/scripts.js"></script>
+</html>
